@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LEIProductDetaillBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkJ-DP-dtD">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vhq-TP-HhE"/>
+                    </constraints>
+                    <state key="normal" title="加入购物车">
+                        <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-ow-qOJ">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a27-dS-p82"/>
+                    </constraints>
+                    <state key="normal" title="立即购买">
+                        <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zkJ-DP-dtD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="VQu-IG-dr4"/>
+                <constraint firstItem="zkJ-DP-dtD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WHL-r2-X4L"/>
+                <constraint firstItem="Xo7-ow-qOJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aCi-Fe-B7c"/>
+                <constraint firstItem="Xo7-ow-qOJ" firstAttribute="leading" secondItem="zkJ-DP-dtD" secondAttribute="trailing" id="hSe-SR-JY3"/>
+                <constraint firstItem="Xo7-ow-qOJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yAF-ic-0M5"/>
+                <constraint firstItem="zkJ-DP-dtD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zpt-rl-TH3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addToShopCartButton" destination="zkJ-DP-dtD" id="Ubc-2A-0Hd"/>
+                <outlet property="amidtBuyButton" destination="Xo7-ow-qOJ" id="cKp-SU-Oc9"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="-229.38530734632684"/>
+        </view>
+    </objects>
+</document>
